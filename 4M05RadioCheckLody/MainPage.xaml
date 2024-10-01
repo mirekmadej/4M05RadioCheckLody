@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M05RadioCheckLody.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="obliczanie ceny lodów"
+                FontSize="40"
+                HorizontalOptions="Center"
+                />
+            <HorizontalStackLayout>
+                <Label
+                    Text="Liczba gałek"
+                    />
+                <Entry
+                    Placeholder="podaj liczbę gałek"
+                    x:Name="entCount"
+                    />
+                <Label
+                    Text=" gałka 7,50 zł / szt"
+                    />
+            </HorizontalStackLayout>
+            <Label
+                Text="Rożek:"
+                />
+            <RadioButton
+                IsChecked="True"
+                Content="zwykły"
+                x:Name="rbtZwykly"
+                />
+            <RadioButton
+                Content="duński"
+                x:Name="rbtDunski"
+                />
+            <Label
+                Text="Dodatrki:"
+                />
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="chkPolewa"
+                    />
+                <Label
+                    Text="polewa + 1 zł"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="chkPosypka"
+                    />
+                <Label
+                    Text="posypka + 1 zł"
+                    />
+            </HorizontalStackLayout>
+            <Button
+                Text="Oblicz cenę"
+                Clicked="btnOblicz"
+                />
+            <Label
+                Text="cena: "
+                x:Name="lblCena"
+                />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
